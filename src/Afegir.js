@@ -1,3 +1,5 @@
+import ArrayBonic from "./ArrayBonic";
+
 export default function Afegir({ array, numero, posicio }) {
   let copia = [...array];
 
@@ -7,13 +9,15 @@ export default function Afegir({ array, numero, posicio }) {
     <div>
       <h1>Afegir</h1>
       <div>
-        array original:{array}
+        array original:
+        <ArrayBonic array={array} />
         <br />
         numero afegit: {numero}
         <br />
         posicio:{posicio}
         <br />
-        array resultat:{copia}
+        array resultat:
+        <ArrayBonic array={copia} />
       </div>
     </div>
   );

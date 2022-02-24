@@ -1,3 +1,5 @@
+import ArrayBonic from "./ArrayBonic";
+
 export default function TreureNoRepetits({ array }) {
   let copia = [...array];
   let noRepetits = [];
@@ -13,9 +15,11 @@ export default function TreureNoRepetits({ array }) {
     <div>
       <h1>Treure No Repetits</h1>
       <div>
-        array original: {array}
+        array original:
+        <ArrayBonic array={array} />
         <br />
-        array final: {noRepetits}
+        array final:
+        <ArrayBonic array={noRepetits} />
       </div>
     </div>
   );

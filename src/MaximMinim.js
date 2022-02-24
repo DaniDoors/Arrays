@@ -1,3 +1,5 @@
+import ArrayBonic from "./ArrayBonic";
+
 export default function MaximMinim({ valors }) {
   let suma = 0;
   let mitjana = 0;
@@ -15,6 +17,7 @@ export default function MaximMinim({ valors }) {
     <div>
       <h1>Suma, mitjana, major i menor</h1>
       <div>
+        Array original: <ArrayBonic array={valors} />
         Suma:{suma}
         <br />
         Mitjana:{mitjana}

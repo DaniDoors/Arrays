@@ -1,3 +1,5 @@
+import ArrayBonic from "./ArrayBonic";
+
 export default function TreureRepetits({ array }) {
   let copia = [...array];
 
@@ -14,9 +16,11 @@ export default function TreureRepetits({ array }) {
     <div>
       <h1>Treure Repetits</h1>
       <div>
-        array original: {array}
+        array original:
+        <ArrayBonic array={array} />
         <br />
-        array final: {copia}
+        array final:
+        <ArrayBonic array={copia} />
       </div>
     </div>
   );

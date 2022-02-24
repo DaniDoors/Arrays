@@ -1,8 +1,9 @@
 export default function objectes({ array, objecte }) {
-  let resultat = [1, 2];
+  let abcd = 0;
+  let resultat = [];
   for (let i = 0; i < array.length; i++) {
-    let abcd = array[i];
-    resultat.push(objecte.a);
+    abcd = array[i];
+    resultat.push(objecte[abcd]);
   }
   return (
     <div>
@@ -10,9 +11,10 @@ export default function objectes({ array, objecte }) {
       <div>
         array original:{array}
         <br />
-        objete original:
+        objete original:{abcd}
         <br />
-        resultat:{resultat[2].hola}
+        resultat:{resultat[0].hola},{resultat[1].hola},{resultat[2].hola},
+        {resultat[3].hola}
       </div>
     </div>
   );
